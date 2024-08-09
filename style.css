@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Ga+Maamli&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Ga+Maamli&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(15, 4%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+    background-color: var(--Stone-600);
+    overflow-x: hidden;
+}
+
+h1,h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+p,b,ul,li,ol {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+
+ol li::marker,
+ul li::marker {
+    color: var(--rose-800);
+}
+
+hr {
+    opacity: 0.3;
+}
+
+.container {
+    max-width: 800px;
+    background-color: var(--white);
+    margin: 4rem auto;
+    border-radius: 16px;
+}
+
+#section-1 .image img {
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+#section-1 .box-1 h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 15px 0;
+    padding: 0 15px;
+}
+
+#section-1 .box-1 p,
+#section-3 .box-5 p {
+    color: var(--Stone-600);
+    margin-bottom: 2.5rem;
+    padding: 0 10px;
+}
+
+#section-1 .box-2 p {
+    color: var(--rose-800);
+    font-size: 18px;
+    margin: 10px;
+    padding: 0 15px;
+}
+
+#section-1 .box-2 ul li,
+#section-1 .box-3 ul li {
+    margin-bottom: 10px;
+    color: var(--stone-900);
+    list-style-position: inside;
+    padding: 0 30px;
+}
+
+#section-1 .box-3 ul li {
+    padding: 0 20px;
+}
+
+#section-1 .box-2 ul li b,
+#section-2 .box-4 ol li b {
+    font-weight: bold;
+}
+
+#section-1 .box-3 h2 {
+    color: var(--rose-800);
+    margin: 20px 0;
+    padding: 0 15px;
+}
+
+#section-2 {
+    padding: 20px;
+}
+
+#section-2 .box-4 h2,
+#section-3 .box-5 h2  {
+    padding: 15px 0;
+    color: var(--rose-800);
+}
+
+#section-2 .box-4 ol li {
+    margin: 10px 15px;
+    padding: 0 20px;
+    color: var(--stone-900);
+    line-height: 1.4;
+}
+  
+#section-3 .box-5 h2 {
+    padding: 0 20px;
+}
+
+#section-3 .box-5 p {
+      margin-bottom: 1rem;
+      padding: 0 10px;
+}
+  
+#section-3 .box-5 div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 400px;
+}
+  
+#section-3 .box-5 div p {
+    padding: 10px 15px;
+}
+
+#section-3 .box-5 div span {
+      color: var(--rose-800);
+      padding: 10px 15px;
+}
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+    }
+ 
+    #section-3 .box-5 div {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    #section-1 .image img {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    #section-1 .box-1 h1 {
+        font-size: 32px;
+    }
+
+}
+ 
